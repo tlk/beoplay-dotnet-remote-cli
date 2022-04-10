@@ -38,6 +38,11 @@ class BeoRemote
             ? results.FirstOrDefault()
             : results.Where(result => result.DisplayName == DisplayName).FirstOrDefault();
 
+        if (device == null)
+        {
+            throw new Exception("No device(s) found on the network");
+        }
+
         DisplayName = device.DisplayName;
 
         var ip = device.IPAddress.ToString();
