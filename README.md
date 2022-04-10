@@ -1,19 +1,27 @@
-﻿# Experimental .NET BeoplayRemoteCLI
+# Experimental .NET BeoplayRemoteCLI
 
 This is an unofficial command line interface (CLI) for .NET to remote control network enabled Beoplay loudspeakers.
 
 Very experimental :-)
 
+Example:
+```
+$ ./BeoplayRemoteCLI.exe Play
+$ ./BeoplayRemoteCLI.exe Pause
+```
+
+
+## Tinker with it
 
 #### Install the dotnet SDK
 See https://docs.microsoft.com/en-us/dotnet/core/install/
 
+Install the SDK if running on WSL2/Ubuntu:
 ```
-# Install the SDK if running on WSL2/Ubuntu.
 sudo apt install dotnet-sdk-6.0
 ```
 
-#### Optional configuration
+#### Configuration
 Optionally, set the name of one of your devices in an environment variable.
 If the environment variable is not set the application will connect to the first device it finds.
 ```
@@ -31,8 +39,8 @@ dotnet run --project ConsoleApp1/BeoplayRemoteCLI.csproj Play
 dotnet run --project ConsoleApp1/BeoplayRemoteCLI.csproj GetVolume
 ```
 
-### Tinker with the code
-Open the project in Visual Studio 2022 Community editon:
+#### Edit the code
+Open the project in Visual Studio 2022 Community edition:
 https://visualstudio.microsoft.com/vs/community/
 
 
