@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "BeoplayRemoteCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "GetVolume",
+      "environmentVariables": {
+        "DEVICE_NAME": "Beoplay M5 i køkkenet"
+      }
+    }
+  }
+}
